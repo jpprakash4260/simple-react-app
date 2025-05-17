@@ -4,8 +4,9 @@ files:
   - source: /
     destination: /var/www/html
     overwrite: yes
+
 hooks:
   AfterInstall:
-    - location: scripts/restart_apache.sh
+    - location: scripts/restart_nginx.sh
       timeout: 30
       runas: root
